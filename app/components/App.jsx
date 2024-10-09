@@ -1,7 +1,8 @@
-import Header from './components/Header';
-import Summary from './components/Summary';
-import Skills from './components/Skills';
-import Career from './components/Career';
+import React from 'react';
+import Header from './Header';
+import Summary from './Summary';
+import Skills from './Skills';
+import Career from './Career';
 
 function App() {
     return (

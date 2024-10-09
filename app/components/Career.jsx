@@ -1,3 +1,5 @@
+import React from 'react';
+
 function Career() {
     const experiences = [
         {
@@ -53,10 +55,10 @@ function Career() {
 
     return (
         <section className="mb-8">
-            <h2 className="text-2xl font-bold mb-4">Career</h2>
+            <h2 className="text-2xl font-bold mb-4 text-teal-600">Career</h2>
             {experiences.map((exp, index) => (
                 <div key={index} className="mb-6 bg-white p-6 rounded-lg shadow">
-                    <h3 className="text-xl font-semibold text-blue-600">{exp.title}</h3>
+                    <h3 className="text-xl font-semibold text-cyan-600">{exp.title}</h3>
                     <p className="text-gray-600">{exp.company}</p>
                     <p className="text-gray-500 mb-2">{exp.period}</p>
                     <ul className="list-disc pl-5">
