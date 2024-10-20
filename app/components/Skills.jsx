@@ -15,16 +15,18 @@ function Skills() {
     ];
 
     return (
-        <section className="mb-8">
-            <h2 className="text-2xl font-bold mb-4 text-teal-600">Skills</h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                {skills.map((skill, index) => (
-                    <div key={index}
-                         className="flex items-center bg-white p-4 rounded-lg shadow transition duration-300 ease-in-out hover:-translate-y-1 hover:shadow-md">
-                        <span className="text-2xl mr-2 text-cyan-600">{skill.icon}</span>
-                        <span>{skill.name}</span>
-                    </div>
-                ))}
+        <section className="min-h-screen flex items-center justify-center bg-gray-100 z-[8] relative">
+            <div className="max-w-4xl mx-auto px-4 py-16">
+                <h2 className="text-4xl font-bold mb-12 text-teal-600 text-center">Skills</h2>
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    {skills.map((skill, index) => (
+                        <div key={index}
+                             className="flex flex-col items-center bg-white p-6 rounded-lg shadow transition duration-300 ease-in-out hover:-translate-y-2 hover:shadow-lg">
+                            <span className="text-4xl mb-4 text-cyan-600">{skill.icon}</span>
+                            <span className="text-lg font-medium">{skill.name}</span>
+                        </div>
+                    ))}
+                </div>
             </div>
         </section>
     );

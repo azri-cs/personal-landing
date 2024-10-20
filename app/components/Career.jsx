@@ -54,20 +54,22 @@ function Career() {
     ];
 
     return (
-        <section className="mb-8">
-            <h2 className="text-2xl font-bold mb-4 text-teal-600">Career</h2>
-            {experiences.map((exp, index) => (
-                <div key={index} className="mb-6 bg-white p-6 rounded-lg shadow">
-                    <h3 className="text-xl font-semibold text-cyan-600">{exp.title}</h3>
-                    <p className="text-gray-600">{exp.company}</p>
-                    <p className="text-gray-500 mb-2">{exp.period}</p>
-                    <ul className="list-disc pl-5">
-                        {exp.responsibilities.map((resp, idx) => (
-                            <li key={idx} className="text-gray-700 mb-1">{resp}</li>
-                        ))}
-                    </ul>
-                </div>
-            ))}
+        <section className="min-h-screen flex items-center justify-center bg-gray-50 z-[7] relative">
+            <div className="max-w-4xl mx-auto px-4 py-16">
+                <h2 className="text-4xl font-bold mb-12 text-teal-600 text-center">Career</h2>
+                {experiences.map((exp, index) => (
+                    <div key={index} className="mb-10 bg-white p-8 rounded-lg shadow-lg">
+                        <h3 className="text-2xl font-semibold text-cyan-600 mb-2">{exp.title}</h3>
+                        <p className="text-xl text-gray-600 mb-1">{exp.company}</p>
+                        <p className="text-lg text-gray-500 mb-4">{exp.period}</p>
+                        <ul className="list-disc pl-6">
+                            {exp.responsibilities.map((resp, idx) => (
+                                <li key={idx} className="text-gray-700 text-lg mb-2">{resp}</li>
+                            ))}
+                        </ul>
+                    </div>
+                ))}
+            </div>
         </section>
     );
 }

@@ -1,14 +1,22 @@
 import React from 'react';
+import RotatingWords from './RotatingWords';
+import Image from 'next/image';
 
-function Header() {
+export default function Header() {
     return (
-        <header className="bg-gradient-to-r from-teal-600 via-cyan-600 to-teal-600 text-white py-4">
-            <div className="flex flex-col items-center justify-center mx-auto px-4">
-                <h1 className="text-3xl font-bold">Azri Adam</h1>
-                <p className="text-xl">Full-Stack Web Developer</p>
+        <header className="relative text-white min-h-screen flex items-center justify-center z-10">
+            <Image
+                src="/img/stars-background.jpeg"
+                alt="Stars background"
+                layout="fill"
+                objectFit="cover"
+                quality={100}
+                priority
+            />
+            <div className="text-center relative z-20">
+                <h1 className="text-5xl font-bold mb-4">Azri Adam</h1>
+                <RotatingWords />
             </div>
         </header>
     );
 }
-
-export default Header;
