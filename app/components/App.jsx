@@ -1,3 +1,4 @@
+'use client';
 import React, { useState, useEffect, useRef } from 'react';
 import Header from './Header';
 import Summary from './Summary';
@@ -38,7 +39,7 @@ function App() {
     }, [currentSection]);
 
     return (
-        <div className="min-h-screen bg-gray-100">
+        <div className="min-h-screen bg-white dark:bg-black">
             <div ref={(el) => (sections.current[0] = el)}>
                 <Header />
             </div>

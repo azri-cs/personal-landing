@@ -1,5 +1,3 @@
-'use client';
-
 import React, { useState, useEffect } from 'react';
 import styles from '../styles/header.module.css';
 
@@ -26,14 +24,14 @@ export default function RotatingWords() {
                 );
                 setIsGlitching(false);
             }, 100);
-        }, 3000);
+        }, 1500);
 
         return () => clearInterval(intervalId);
     }, []);
 
     return (
         <p
-            className={`text-2xl h-8 ${isGlitching ? styles.glitch : ''}`}
+            className={`text-2xl h-8 text-cyan-600 dark:text-cyan-400 ${isGlitching ? styles.glitch : ''}`}
             data-text={rotatingWords[currentWordIndex]}
         >
             {rotatingWords[currentWordIndex]}

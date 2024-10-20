@@ -2,10 +2,10 @@ import React from 'react';
 
 function Summary() {
     return (
-        <section className="min-h-screen flex items-center justify-center bg-gray-50 z-[9] relative">
+        <section className="min-h-screen flex items-center justify-center relative">
             <div className="max-w-4xl mx-auto px-4 py-16">
-                <h2 className="text-4xl font-bold mb-8 text-teal-600">Summary</h2>
-                <p className="text-gray-700 text-xl leading-relaxed">
+                <h2 className="text-4xl font-bold mb-8 text-teal-600 dark:text-teal-400">Summary</h2>
+                <p className="dark:text-white text-xl leading-relaxed">
                     Versatile Full-Stack Web Developer with 4+ years of experience in designing, developing, and
                     deploying high-performance web applications. Proficient in utilizing cutting-edge technologies such
                     as Laravel, PHP, Bootstrap, TailwindCSS, JavaScript, jQuery, and MySQL. Adept at front-end

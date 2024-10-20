@@ -54,17 +54,17 @@ function Career() {
     ];
 
     return (
-        <section className="min-h-screen flex items-center justify-center bg-gray-50 z-[7] relative">
+        <section className="min-h-screen overflow-y-auto relative">
             <div className="max-w-4xl mx-auto px-4 py-16">
-                <h2 className="text-4xl font-bold mb-12 text-teal-600 text-center">Career</h2>
+                <h2 className="text-4xl font-bold mb-12 text-teal-600 dark:text-teal-400 text-center">Career</h2>
                 {experiences.map((exp, index) => (
-                    <div key={index} className="mb-10 bg-white p-8 rounded-lg shadow-lg">
-                        <h3 className="text-2xl font-semibold text-cyan-600 mb-2">{exp.title}</h3>
-                        <p className="text-xl text-gray-600 mb-1">{exp.company}</p>
-                        <p className="text-lg text-gray-500 mb-4">{exp.period}</p>
+                    <div key={index} className="mb-10 bg-white dark:bg-slate-900 p-8 rounded-lg shadow-lg">
+                        <h3 className="text-2xl font-semibold text-cyan-600 dark:text-cyan-400 mb-2">{exp.title}</h3>
+                        <p className="text-xl text-black dark:text-slate-300 mb-1">{exp.company}</p>
+                        <p className="text-lg text-black dark:text-slate-200 mb-4">{exp.period}</p>
                         <ul className="list-disc pl-6">
                             {exp.responsibilities.map((resp, idx) => (
-                                <li key={idx} className="text-gray-700 text-lg mb-2">{resp}</li>
+                                <li key={idx} className="text-black dark:text-slate-100 text-lg mb-2">{resp}</li>
                             ))}
                         </ul>
                     </div>
